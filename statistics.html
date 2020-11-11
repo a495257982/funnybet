@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>后台结算</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .tab_outer{
+      margin: 20px auto;
+      width: 40%;
+    }
+    .menu{
+      background-color: #cccccc;
+      /*border: 1px solid red;*/
+      line-height: 40px;
+      text-align: center;
+    }
+    .menu li{
+      display: inline-block;
+      margin-left: 14px;
+      padding:5px 20px;
+      cursor: pointer;
+    }
+    .menu a{
+      border-right: 1px solid red;
+      padding: 11px;
+    }
+    .content{
+      background-color: tan;
+      border: 1px solid green;
+      height: 300px;
+    }
+    .content h1{
+      font-size: 30px;
+      text-align: center;
+      padding: 50px 0;
+    }
+    .content .flex{
+      display: flex;
+      justify-content: space-around;
+    }
+    .content .flex input{
+      width: 200px;
+    }
+    .content .flexs{
+      flex-wrap: wrap
+    }
+    .content .flexs input{
+      margin-bottom: 20px;
+    }
+
+
+    .content  button{
+      width: 100px;
+      float: right;
+      margin-top: 60px;
+    }
+
+    .hide{
+      display: none;
+    }
+
+    .current{
+      background-color: #00A0E0;
+      color: white;
+      border-top: solid 2px rebeccapurple;
+    }
+  </style>
+</head>
+<body>
+<div class="tab_outer">
+  <ul class="menu">
+    <li egon="c1" class="current">closeAct</li>
+    <li egon="c2" >算分红</li>
+    <li egon="c3">算奖励</li>
+    <li egon="c4">推荐</li>
+    <li egon="c5">发送资金</li>
+  </ul>
+  <div class="content">
+    <div id="c1">
+      <h1>closeAct</h1>
+<!--      <div class="flex">-->
+<!--        <input type="text" class="form-control" placeholder="请输入">-->
+<!--        <input type="text" class="form-control" placeholder="请输入">-->
+<!--        <input type="text" class="form-control" placeholder="请输入">-->
+<!--      </div>-->
+      <button type="button" class="btn btn-success closeAct_btn">确定</button>
+    </div>
+
+    <div id="c2" class="hide">
+      <h1>算分红</h1>
+      <div class="flex">
+        <input type="text" class="form-control bonus_val1" placeholder="请输入数字" >
+        <input type="text" class="form-control bonus_val2" placeholder="请输入数字" >
+        <input type="text" class="form-control bonus_val3" placeholder="请输入数字" >
+      </div>
+      <button type="button" class="btn btn-success bonus_btn">确定</button>
+    </div>
+
+    <div id="c3" class="hide">
+      <h1>算奖励</h1>
+      <div class="flex">
+        <input type="text" class="form-control award_val1" placeholder="请输入数字" >
+        <input type="text" class="form-control award_val2" placeholder="请输入数字" >
+        <input type="text" class="form-control award_val3" placeholder="请输入数字" >
+      </div>
+      <button type="button" class="btn btn-success award_btn">确定</button>
+    </div>
+
+    <div id="c4" class="hide">
+      <h1>推荐</h1>
+      <div class="flex flexs">
+        <input type="text" class="form-control recommend_val1" placeholder="请输入字符串">
+        <input type="text" class="form-control recommend_val2" placeholder="请输入数字">
+        <input type="text" class="form-control recommend_val3" placeholder="请输入字符串">
+        <input type="text" class="form-control recommend_val4" placeholder="请输入字符串">
+        <input type="text" class="form-control recommend_val5" placeholder="请输入数字">
+        <input type="text" class="form-control recommend_val6" placeholder="请输入数字">
+      </div>
+      <button type="button" class="btn btn-success recommend_btn">确定</button>
+    </div>
+
+    <div id="c5" class="hide">
+      <h1>发送资金</h1>
+      <div class="flex">
+        <input type="text" class="form-control fund_val1" placeholder="请输入数字">
+        <input type="text" class="form-control fund_val2" placeholder="请输入数字">
+        <input type="text" class="form-control fund_val3" placeholder="请输入数字">
+      </div>
+      <button type="button" class="btn btn-success fund_btn">确定</button>
+    </div>
+
+  </div>
+</div>
+</body>
+
+
+
+<script src="lib/jquery-3.4.1.min.js"></script>
+<script src="lib/web3.min.js"></script>
+<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+<script src="js/eth.js"></script>
+<script>
+  //菜单切换
+  $(".menu li").click(function () {
+
+    $(this).addClass("current").siblings().removeClass("current")
+
+    var index=$(this).attr("egon");
+
+    $("#"+index).removeClass("hide").siblings().addClass("hide")
+
+  });
+
+
+
+  //closeAct
+  $('.closeAct_btn').click(function(){
+    info.closeAct.sendTransaction(web3.eth.coinbase,function (err,result) {
+      if(err){
+        console.log(err);
+      }else {
+        console.log(result);
+      }
+    });
+  });
+
+  //算分红
+  $('.bonus_btn').click(function(){
+    console.log($('.bonus_val1').val());
+    console.log($('.bonus_val2').val());
+    console.log($('.bonus_val3').val());
+    info. countShareAndRecommendedAward.sendTransaction($(".bonus_val1").val(),$(".bonus_val2").val(),$(".bonus_val3").val(),function (err,result) {
+        if(err){
+        console.log(err);
+      }else {
+        console.log(result);
+      }
+    });
+  });
+
+
+
+  //算奖励
+  $('.award_btn').click(function(){
+    console.log($('.award_val1').val());
+    console.log($('.award_val2').val());
+    console.log($('.award_val3').val());
+    info. countRecommend.sendTransaction($(".award_val1").val(),$(".award_val2").val(),$(".award_val3").val(),function (err,result) {
+      if(err){
+        console.log(err);
+      }else {
+        console.log(result);
+      }
+    });
+  });
+
+
+  //推荐
+  $('.recommend_btn').click(function(){
+    console.log($('.recommend_val1').val());
+    console.log($('.recommend_val2').val());
+    console.log($('.recommend_val3').val());
+    console.log($('.recommend_val4').val());
+    console.log($('.recommend_val5').val());
+    console.log($('.recommend_val6').val());
+    info.  remedy.sendTransaction($(".recommend_val1").val(),$(".recommend_val2").val(),$(".recommend_val3").val(),$(".recommend_val4").val(),$(".recommend_val5").val(),$(".recommend_val6").val(),function (err,result) {
+      if(err){
+        console.log(err);
+      }else {
+        console.log(result);
+      }
+    });
+  });
+
+  //推发送资金
+  $('.fund_btn').click(function(){
+    console.log($('.fund_val1').val());
+    console.log($('.fund_val2').val());
+    console.log($('.fund_val3').val());
+    info. sendAward.sendTransaction($(".fund_val1").val(),$(".fund_val2").val(),$(".fund_val3").val(),function (err,result) {
+      if(err){
+        console.log(err);
+      }else {
+        console.log(result);
+      }
+    });
+  });
+
+
+
+
+
+</script>
+</html>

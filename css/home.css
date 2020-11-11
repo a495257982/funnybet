@@ -1,0 +1,108 @@
+#wrap{width:100%;background: url("../imgs/bg.png")no-repeat;position: relative}
+#content{padding: 0}
+.clearFloat:after{content: "";clear: both;display: block;}
+.custom-nav{padding-top: 30px;}
+.hd-right a{color: white;text-decoration: none;font-size: 16px;display: inline-block;}
+.hd-right{display: flex;justify-content: space-around;flex: 1;align-items:center;margin-left: 30px;}
+.lang{padding-top: 4px}
+
+.icons1,.icons2{display: flex;justify-content: space-around;}
+.lists{display: flex;justify-content: center;align-items: center}
+.lists{margin:5px 0px;}
+.list{padding: 15%;background: rgba(0,0,0,.1);border-radius: 8px;width: 100%;text-align: center}
+.list p{color: white;text-align: center;}
+.list img{display: inline-block;}
+.icon{width: 142px;}
+.num{padding-top: 10px;}
+section{margin-top: 40px;}
+
+.state p{text-align: center;color: white;font-size: 16px;line-height: 2;}
+.common{background: rgba(0,0,0,.1);padding: 60px;color: white;border-radius: 5px;}
+/*height: 770px;*/
+.state p:nth-child(1){font-size: 18px;padding-bottom: 10px}
+.state p img{vertical-align: middle;}
+.eth{margin-top: 55px;}
+.eth img{width: 225px;margin-bottom: 15px;}
+.bet-ok{background: url("../imgs/bet-ok-bg.png")no-repeat;text-align: center;color: white;margin: 0 auto;margin-top: 100px;}
+.bet-ok img{vertical-align: middle}
+.resultRecord{text-align: center;color: white;font-size: 16px;line-height: 3;}
+.resultRecord img{vertical-align: sub;}
+.line{font-size: 14px;margin-top: 40px}
+.line:after{content: "";height: 2px;background: rgba(255,255,255,.3);display: block;margin-top: 10px;}
+.time{float: left;margin-bottom: 10px;}
+.money{float: right}
+.time-data{float: left;display: inline-block}
+.money-data{float: right;display: inline-block;}
+.data{font-size: 13px;line-height: 30px;}
+.result{height: 560px;overflow: auto}
+#num{margin: 0 35px;position: relative}
+#numBox{display: flex;justify-content: center;align-items: center;}
+#bet{padding-top: 55px;}
+.betNum p:nth-child(1){position: absolute;top: 30%;left: 50%;transform: translate(-50%, 0%);}
+.betNum p:nth-child(2){color: #00A0E0;text-align: center;font-size: 16px;margin-top: 10px}
+.specialNum{line-height: 50px;font-size:40px;font-weight:bolder;position: relative;background-image:-webkit-linear-gradient(bottom,#00C1E0,#0078FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent; }
+
+
+.item{display: inline-block;width: 48%;text-align: center;margin-bottom: 50px;}
+.item p{line-height:3}
+.com-p{color: #215EBE;font-size: 14px;}
+.s3{padding: 40px 0px;font-size: 18px}
+
+footer{padding: 60px 0px;background: #00155D;color: white;font-size: 14px;margin-top: 80px;padding: 0 0 50px 0;}
+.ft{margin:0 auto;font-size: 16px;}
+.ft-li li{display: inline-block;margin-right: 50px;padding: 15px 10px;font-size: 14px;}
+.ft-li{padding-top:20px }
+.ft-li li img{vertical-align: middle;}
+.ft p{margin-left: -5px;}
+
+.custom-active2{font-weight: bold}
+.custom-active{font-weight:bold;position: relative;background-image: -webkit-linear-gradient(top,#00C1E0,#0078FF);-webkit-background-clip:text;}
+/*-webkit-text-fill-color: transparent;*/
+.custom-active:after{content: "";display: inline-block;height: 2px;width: 24px;text-align: center;position: absolute;bottom: 8px;left: 72%;transform: translateX(-50%)
+;background-image: -webkit-linear-gradient(left,#00C1E0,#0078FF);-webkit-text-fill-color: transparent}
+.line2:after{bottom: 5px!important;}
+.line2{-webkit-text-fill-color: white!important;}
+
+.itemWithdraw{position: relative;}
+#withdraw{display: inline-block;width: 45px;height: 22px;background: url(../imgs/bet-ok-bg.png)no-repeat;position: absolute;top: 18px;left: 50%;
+    transform: translateX(-50%);
+    margin-left: 60px;outline: none;border: none;background-size: cover;color: white;border-radius: 2px;font-size: 12px}
+.wallet{text-align: center;font-size: 18px;}
+.wallet p{margin-bottom: 50px;letter-spacing: 2px;}
+.get li{margin: 20px 0px;text-align: center;}
+
+.alertUs{width: 350px;background: white;border-radius: 5px;position: absolute;z-index: 4;left: 50%;transform: translateX(-50%);top: 45%;}
+.alertUsBox{position: absolute;width:100%;height: 100%;z-index: 3;display: none;background: rgba(0,0,0,.5)}
+.alertUs img{position: absolute;top: -115px;left: 50%;transform: translateX(-50%);}
+.alertContent{margin-top: 130px;padding: 0 30px;line-height: 1.5;letter-spacing: 1px;padding-bottom: 80px;text-align: justify;}
+.alertContent h3{margin-bottom: 20px;font-weight: bold;}
+
+.custom-bar{background-color: rgba(215,215,215,.3)}
+.custom-nv li{padding-left: 50px;}
+.custom-nv li a{background: transparent!important;}
+.state img{display: inline-block}
+.bet-ok img{display: inline-block}
+.bet-ok{width: 276px;height: 73px;line-height: 73px;cursor: pointer;}
+.wallet img{display: inline-block}
+.get img{display: inline-block}
+
+.nv-bar li{padding: 10px 50px;}
+.nv-bar{position: absolute;
+    top: 80px;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    display: none;
+    color: white;}
+.nv-bar a{color: white}
+.show{display: inline-block}
+.custom-nv li a:hover {text-decoration: none;background-color: transparent;}
+.custom-nv li a{color: white;}
+
+.install{width: 300px;background: #00DAD4;border-radius: 10px;text-align: center;margin: 0 auto;padding: 30px;line-height: 1.5;margin-top: 40px;display: none;background-image:url("../imgs/installBg.png");background-size: cover;}
+.install h1{font-size: 22px}
+.andr{display: none}
+
+@media screen and (min-width: 767px) {
+    .nv-bar {display: none!important;}
+}

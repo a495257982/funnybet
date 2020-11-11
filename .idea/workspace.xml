@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ab4f32bd-e8a1-4c41-8ccb-d80af22f93ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/eth.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/eth.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RDo6p8FWQR01abJXEnbPzjMOyL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\jiangjieProjects\1305\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\1305demo" />
+      <recent name="E:\projects\1305demo\lib" />
+      <recent name="E:\projects\1305\lib" />
+      <recent name="E:\jiangjieProjects\1305\lib" />
+      <recent name="E:\jiangjieProjects\1305\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ab4f32bd-e8a1-4c41-8ccb-d80af22f93ce" name="Default Changelist" comment="" />
+      <created>1569210854597</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569210854597</updated>
+      <workItem from="1569210856225" duration="2132000" />
+      <workItem from="1569219792023" duration="18805000" />
+      <workItem from="1569287992388" duration="25984000" />
+      <workItem from="1569372993506" duration="1244000" />
+      <workItem from="1569401669591" duration="1324000" />
+      <workItem from="1569405274561" duration="3080000" />
+      <workItem from="1569460446339" duration="307000" />
+      <workItem from="1569461533327" duration="316000" />
+      <workItem from="1569463547896" duration="78000" />
+      <workItem from="1569463655849" duration="6000" />
+      <workItem from="1569549715476" duration="362000" />
+      <workItem from="1569551437719" duration="227000" />
+      <workItem from="1569553088663" duration="6438000" />
+      <workItem from="1569566946998" duration="21786000" />
+      <workItem from="1569636936717" duration="599000" />
+      <workItem from="1569651736281" duration="3739000" />
+      <workItem from="1569657994506" duration="8767000" />
+      <workItem from="1569716882487" duration="22705000" />
+      <workItem from="1569752393337" duration="8864000" />
+      <workItem from="1569803105451" duration="30779000" />
+      <workItem from="1569847873885" duration="2426000" />
+      <workItem from="1569850317502" duration="69000" />
+      <workItem from="1569899784133" duration="22160000" />
+      <workItem from="1572244579968" duration="1367000" />
+      <workItem from="1572318040186" duration="13575000" />
+      <workItem from="1572502374427" duration="1222000" />
+      <workItem from="1572588923038" duration="1212000" />
+      <workItem from="1572597150185" duration="599000" />
+      <workItem from="1572937564835" duration="307000" />
+      <workItem from="1572941907411" duration="2000" />
+      <workItem from="1572944253621" duration="3000" />
+      <workItem from="1573019209095" duration="1924000" />
+      <workItem from="1573106233794" duration="2307000" />
+      <workItem from="1573112039953" duration="2678000" />
+      <workItem from="1573115189279" duration="1055000" />
+      <workItem from="1573117305181" duration="781000" />
+      <workItem from="1573118573583" duration="3216000" />
+      <workItem from="1573174715449" duration="26307000" />
+      <workItem from="1573260761170" duration="8294000" />
+      <workItem from="1573272972624" duration="7068000" />
+      <workItem from="1573285327135" duration="277000" />
+      <workItem from="1573286672327" duration="791000" />
+      <workItem from="1573287840963" duration="3148000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
